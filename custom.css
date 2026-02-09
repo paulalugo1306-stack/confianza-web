@@ -1,0 +1,67 @@
+/* ==============================
+   PALETA CONFIANZA - OVERRIDE
+   ============================== */
+
+:root {
+  --primary: #0D65A6;
+  --secondary: #599DC7;
+  --background: #D2DEEE;
+  --surface: #FCFEFE;
+  --dark: #0C234D;
+
+  --success: #43B581;
+  --danger: #E45858;
+  --warning: #F4C542;
+}
+
+/* Fondo general */
+body {
+  background-color: var(--background) !important;
+  color: var(--dark);
+}
+
+/* Header / títulos */
+.hero-title,
+.section-title,
+h1, h2, h3, h4 {
+  color: var(--dark) !important;
+}
+
+/* Botones principales */
+.button-primary,
+.menu button {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: white !important;
+}
+
+.button-primary:hover,
+.menu button:hover {
+  background-color: var(--secondary) !important;
+}
+
+/* Secciones / tarjetas */
+.seccion,
+.feature-inner,
+.section-inner {
+  background-color: var(--surface) !important;
+  border-radius: 10px;
+}
+
+/* Íconos destacados */
+.feature-icon svg path {
+  fill: var(--primary) !important;
+}
+
+/* Estados */
+.success {
+  color: var(--success);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.warning {
+  color: var(--warning);
+}
