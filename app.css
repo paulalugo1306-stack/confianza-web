@@ -3,15 +3,23 @@
 ====================== */
 
 :root {
+  /* Colores principales */
   --azul-claro: #D2DEEE;
   --cian-claro: #FCFEFE;
   --celeste-vivido: #0D65A6;
   --celeste: #599DC7;
-  --azul-negro: #0C234D;
+  --azul-oscuro: #0C234D;
 
+  /* Interacción */
   --exito: #43B581;
   --error: #E45858;
-  --advertencia: #F4C542;
+  --alerta: #F4C542;
+
+  /* UI */
+  --fondo-oscuro: #0B1320;
+  --fondo-card: #FFFFFF;
+  --texto-principal: #0C234D;
+  --texto-claro: #FFFFFF;
 }
 
 body {
