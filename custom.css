@@ -48,6 +48,13 @@ h1, h2, h3, h4 {
   border-radius: 10px;
 }
 
+/* ===== TARJETAS ===== */
+
+.feature-inner,
+.seccion {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
 /* Íconos destacados */
 .feature-icon svg path {
   fill: var(--primary) !important;
@@ -64,4 +71,22 @@ h1, h2, h3, h4 {
 
 .warning {
   color: var(--warning);
+}
+/* ===== HERO FIX ===== */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #0C234D 0%,
+    #0D65A6 60%,
+    #599DC7 100%
+  ) !important;
+}
+
+.hero-title {
+  color: #FCFEFE !important;
+}
+
+.hero-paragraph {
+  color: #D2DEEE !important;
 }
