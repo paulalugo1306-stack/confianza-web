@@ -6,36 +6,27 @@
   <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
+  <div class="app-container">
 
-<nav>
-  <button onclick="mostrarSeccion('facturas')">Facturas</button>
-  <button onclick="mostrarSeccion('garantias')">Garantías</button>
-  <button onclick="mostrarSeccion('recordatorios')">Recordatorios</button>
-  <button onclick="mostrarSeccion('encuestas')">Encuestas</button>
-</nav>
+    <nav class="menu">
+      <button onclick="mostrarSeccion('facturas')">Facturas</button>
+      <button onclick="mostrarSeccion('garantias')">Garantías</button>
+      <button onclick="mostrarSeccion('recordatorios')">Recordatorios</button>
+      <button onclick="mostrarSeccion('encuestas')">Encuestas</button>
+    </nav>
 
-<section id="facturas">
-  <h2>Gestión de facturas</h2>
-  <input type="text" id="producto" placeholder="Producto">
-  <button onclick="agregarFactura()">Agregar factura</button>
-  <ul id="listaFacturas"></ul>
-</section>
+    <section id="facturas" class="seccion">
+      <h2>Gestión de facturas</h2>
+      <input type="text" id="producto" placeholder="Producto">
+      <button onclick="agregarFactura()">Agregar factura</button>
+      <ul id="listaFacturas"></ul>
+    </section>
 
-<section id="garantias" style="display:none">
-  <h2>Garantías</h2>
-  <p>Garantía válida por 12 meses desde la fecha de compra.</p>
-</section>
+    <!-- las otras secciones -->
+    
+  </div>
 
-<section id="recordatorios" style="display:none">
-  <h2>Recordatorios</h2>
-  <p>Recordatorio configurado antes del vencimiento.</p>
-</section>
-
-<section id="encuestas" style="display:none">
-  <h2>Encuestas</h2>
-  <p>Encuesta de satisfacción del producto.</p>
-</section>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+
