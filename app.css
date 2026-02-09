@@ -1,41 +1,110 @@
+/* ======================
+   CONFIANZA - ESTILOS APP
+====================== */
+
+:root {
+  --azul-claro: #D2DEEE;
+  --cian-claro: #FCFEFE;
+  --celeste-vivido: #0D65A6;
+  --celeste: #599DC7;
+  --azul-negro: #0C234D;
+
+  --exito: #43B581;
+  --error: #E45858;
+  --advertencia: #F4C542;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--azul-claro);
   margin: 0;
 }
 
 .app-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
 }
 
+/* ===== MENÚ ===== */
 .menu {
-  background: #2c3e50;
-  padding: 10px;
+  background: var(--azul-negro);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
 }
 
 .menu button {
-  background: #3498db;
+  background: var(--celeste-vivido);
   color: white;
   border: none;
-  padding: 10px 15px;
-  margin-right: 5px;
+  padding: 10px 18px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .menu button:hover {
-  background: #2980b9;
+  background: var(--celeste);
+  transform: translateY(-2px);
 }
 
+/* ===== SECCIONES ===== */
 .seccion {
-  background: white;
-  padding: 20px;
+  background: var(--cian-claro);
+  padding: 25px;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(12, 35, 77, 0.15);
+  animation: fadeIn 0.4s ease-in-out;
 }
 
+.seccion h2 {
+  color: var(--azul-negro);
+  margin-top: 0;
+}
+
+/* ===== FORMULARIOS ===== */
 input {
-  padding: 8px;
-  margin-right: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--celeste);
+  margin-right: 10px;
+}
+
+button.accion {
+  background: var(--exito);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.accion:hover {
+  opacity: 0.9;
+}
+
+/* ===== LISTAS ===== */
+ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ===== ANIMACIÓN ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
